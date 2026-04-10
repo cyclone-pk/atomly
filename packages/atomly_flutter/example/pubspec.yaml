@@ -1,0 +1,28 @@
+name: atomly_flutter_example
+description: Comprehensive demo of every atomly_flutter feature.
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ^3.5.0
+  flutter: ">=3.22.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  atomly: ^0.1.0
+  atomly_flutter: ^0.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+dependency_overrides:
+  atomly:
+    path: ../../atomly
+  atomly_flutter:
+    path: ../
+
+flutter:
+  uses-material-design: true

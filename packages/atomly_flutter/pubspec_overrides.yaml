@@ -1,0 +1,6 @@
+# Local development override: use the sibling atomly package directly.
+# Excluded from `dart pub publish`, so the published package uses the
+# version constraint in pubspec.yaml.
+dependency_overrides:
+  atomly:
+    path: ../atomly

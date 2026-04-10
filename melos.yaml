@@ -1,0 +1,55 @@
+name: atomly_workspace
+
+repository: https://github.com/cyclone-pk/atomly
+
+packages:
+  - packages/*
+  - packages/*/example
+
+ide:
+  intellij: false
+
+scripts:
+  analyze:
+    description: Run `dart analyze` in every Dart-only package.
+    exec: dart analyze .
+    packageFilters:
+      flutter: false
+
+  analyze:flutter:
+    description: Run `flutter analyze` in every Flutter package.
+    exec: flutter analyze .
+    packageFilters:
+      flutter: true
+
+  test:
+    description: Run `dart test` in every Dart-only package.
+    exec: dart test
+    packageFilters:
+      flutter: false
+      dirExists: test
+
+  test:flutter:
+    description: Run `flutter test` in every Flutter package.
+    exec: flutter test
+    packageFilters:
+      flutter: true
+      dirExists: test
+
+  format:
+    description: Format every Dart file in the workspace.
+    run: dart format packages/
+
+  publish:dry:
+    description: Publish dry-run on every Dart-only package.
+    exec: dart pub publish --dry-run
+    packageFilters:
+      noPrivate: true
+      flutter: false
+
+  publish:dry:flutter:
+    description: Publish dry-run on every Flutter package.
+    exec: flutter pub publish --dry-run
+    packageFilters:
+      noPrivate: true
+      flutter: true

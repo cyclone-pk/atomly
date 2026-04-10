@@ -1,0 +1,26 @@
+name: atomly
+description: >-
+  Atomic state management for Dart and Flutter. One primitive — Atom<T> —
+  handles sync state, async state, computed values, families, and side
+  effects with zero boilerplate, zero code generation, and built-in
+  loading/error handling.
+version: 0.1.0
+repository: https://github.com/cyclone-pk/atomly/tree/main/packages/atomly
+issue_tracker: https://github.com/cyclone-pk/atomly/issues
+homepage: https://github.com/cyclone-pk/atomly
+topics:
+  - state
+  - state-management
+  - reactive
+  - atom
+  - async
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  meta: ^1.15.0
+
+dev_dependencies:
+  test: ^1.25.0
+  lints: ^4.0.0
