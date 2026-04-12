@@ -1,10 +1,8 @@
 name: atomly_flutter
 description: >-
-  Flutter integration for the atomly atomic state manager. Provides
-  AtomScope, AtomBuilder, AtomConsumer, AtomListener, and BuildContext
-  extensions for watch / read / select / when / listen / set / update /
-  refresh.
-version: 0.1.0
+  Flutter integration for atomly. Provides AtomScope, AtomBuilder, AtomConsumer,
+  AtomListener, and BuildContext extensions for reactive atomic state.
+version: 0.1.1
 repository: https://github.com/cyclone-pk/atomly/tree/main/packages/atomly_flutter
 issue_tracker: https://github.com/cyclone-pk/atomly/issues
 homepage: https://github.com/cyclone-pk/atomly
@@ -22,7 +20,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  atomly: ^0.1.0
+  atomly: ^0.1.1
   meta: ^1.15.0
 
 dev_dependencies:

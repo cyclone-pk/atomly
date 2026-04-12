@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.1
+
+- Add a runnable headless example under `example/`.
+- Shorten the package description to fit pub.dev's 60–180 character window
+  for search-result snippets.
+
 ## 0.1.0
 
 Initial release.
